@@ -46,13 +46,13 @@ class Signup : Fragment() {
         BtnSignup = v.findViewById(R.id.btn_signup)
 
         BtnSignup.setOnClickListener {
-            login()
+            signup()
         }
 
         return v
     }
 
-    private fun login() {
+    private fun signup() {
         if (name.text.isEmpty()) {
             name.setError("Name is Required")
             name.requestFocus()
@@ -102,6 +102,7 @@ class Signup : Fragment() {
             .addOnSuccessListener(OnSuccessListener<Void?> {
                 val intent = Intent(activity, MainActivity2::class.java)
                 startActivity(intent)
+                requireActivity().finish()
             })
             .addOnFailureListener(OnFailureListener { })
     }
