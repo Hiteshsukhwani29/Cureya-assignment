@@ -20,7 +20,7 @@ class Signin : Fragment() {
         signup = v.findViewById(R.id.tv_signup)
 
         signup.setOnClickListener {
-            requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Signup()).commit()
+            requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Signup()).addToBackStack(null).commit()
         }
 
         return v
