@@ -1,5 +1,6 @@
 package com.hitesh.cureyaassignment.adapter
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.hitesh.cureyaassignment.Profile
 import com.hitesh.cureyaassignment.R
 import com.hitesh.cureyaassignment.User
 import com.squareup.picasso.Picasso
@@ -27,7 +31,17 @@ class UserAdapter(private val mList: ArrayList<User>) :
         holder.userName.text = itemsViewModel.name
         holder.userEmail.text = itemsViewModel.email
         holder.userCard.setOnClickListener {
-
+            val fragment: Fragment = Profile()
+            val bundle = Bundle()
+            bundle.putString("imgurl", itemsViewModel.imgurl)
+            bundle.putString("name", itemsViewModel.name)
+            bundle.putString("age", itemsViewModel.age)
+            bundle.putString("email", itemsViewModel.name)
+            bundle.putString("bio", itemsViewModel.bio)
+            fragment.setArguments(bundle)
+            (holder.itemView.context as FragmentActivity).getSupportFragmentManager()
+                .beginTransaction().replace(R.id.fragment_container2, fragment).addToBackStack(null)
+                .commit()
         }
     }
 

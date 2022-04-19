@@ -17,6 +17,7 @@ class MainActivity2 : AppCompatActivity() {
         bottomNavigationView = findViewById<BottomNavigationView>(R.id.nav_view);
 
         bottomNavigationView.selectedItemId = R.id.navigation_account
+        setCurrentFragment(Profile())
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -30,7 +31,7 @@ class MainActivity2 : AppCompatActivity() {
                     setCurrentFragment(Profile())
                 }
                 R.id.navigation_search -> {
-                Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
                 }
             }
             true
