@@ -82,6 +82,8 @@ class Signup : Fragment() {
                         data.put("email",email.text.toString())
                         data.put("age",age.text.toString())
                         data.put("bio",bio.text.toString())
+                        val n = name.text.split(" ")
+                        data.put("imgurl","https://ui-avatars.com/api/?name=${n[0]}+${n[1]}")
                         addDataToFirestore()
                     } else {
                         Toast.makeText(

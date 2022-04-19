@@ -3,12 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_account_filled.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_account_outlined.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_home_filled.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_home_outlined.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_search_filled.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_search_outlined.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/account_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/allusers_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/home_selector.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/rounded_btn.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/search_selector.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10049285888671869" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.14010416666666667" />
+        <entry key="app/src/main/res/layout/fragment_all_users.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_signin.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.1017542521158854" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.14010416666666667" />
       </map>
     </option>
   </component>
