@@ -3,13 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Profile">
 
-    <!-- TODO: Update blank fragment layout -->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profile_user_icon"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        app:riv_corner_radius="9999dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/profile_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        tools:text="Hitesh Sukhwani"/>
+
+    <TextView
+        android:id="@+id/profile_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        tools:text="Hiteshsukhwani29@gmail.com"/>
+
+    <TextView
+        android:id="@+id/profile_user_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        tools:text="20"/>
 
 </LinearLayout>

@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/drawable/search_selector.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10049285888671869" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.14010416666666667" />
+        <entry key="app/src/main/res/layout/card_user.xml" value="0.14010416666666667" />
         <entry key="app/src/main/res/layout/fragment_all_users.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_signin.xml" value="0.1" />
