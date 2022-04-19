@@ -36,7 +36,7 @@ class UserAdapter(private val mList: ArrayList<User>) :
             bundle.putString("imgurl", itemsViewModel.imgurl)
             bundle.putString("name", itemsViewModel.name)
             bundle.putString("age", itemsViewModel.age)
-            bundle.putString("email", itemsViewModel.name)
+            bundle.putString("email", itemsViewModel.email)
             bundle.putString("bio", itemsViewModel.bio)
             fragment.setArguments(bundle)
             (holder.itemView.context as FragmentActivity).getSupportFragmentManager()
